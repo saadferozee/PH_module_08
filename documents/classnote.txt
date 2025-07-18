@@ -29,16 +29,43 @@ Video 02___________________________________________
 
 
 Video 03___________________________________________
- 
+    (Responsive Flex and CSS Grid Span)
 
 
 
 
 
 Video 04___________________________________________
+    (Practical Grid Area Layout and Media Query)
 
+    We can use Grid-Area to define any layout -->
+        [First I have to define area name]
+        code -->
 
+            header {
+                grid-area: header;
+            }
+            nav {
+                grid-area: navbar;
+            }
+            main {
+                grid-area: main;
+            }
+            footer {
+                grid-area: footer;
+            }
 
+            .selector {
+                display: grid;
+                gap: 10px;
+
+                grid-template-area:
+                "header header header header"
+                "nav    main   main   main"
+                "nav    main   main   main"
+                "nav    main   main   main"
+                "footer footer footer footer"
+            }
 
 
 
@@ -49,8 +76,13 @@ Video 05___________________________________________
 
 
 Video 06___________________________________________
+    (Make What I Do And Footer Section Responsive)
 
+    We can use calc() function for any value calculation -->
 
+        .selector {
+            width: calc(100% - 20px);
+        }
 
 
 
@@ -69,10 +101,6 @@ Video 09___________________________________________
 
 
 
---------------------------------------------------
-    Pause { 00.07.2025 THU 00:00 PM } to { 00.07.2025 THU 00:00 PM }
---------------------------------------------------
-
 PRACTICE TASK --->
 
 
@@ -80,5 +108,5 @@ PRACTICE TASK --->
 
 © Saad_Ferozee
 --------------------------------------------------
-    End { 00.07.2025 WED 00:00 AM }
+    End { 18.07.2025 FRI 11:23 PM }
 --------------------------------------------------
